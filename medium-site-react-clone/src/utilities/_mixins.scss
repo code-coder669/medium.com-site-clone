@@ -1,0 +1,6 @@
+@mixin flexConatiner($align: center, $justify: flex-start, $gap: 0px) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+  }

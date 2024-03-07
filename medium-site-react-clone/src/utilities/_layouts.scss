@@ -1,0 +1,87 @@
+@mixin flexConatiner($align: center, $justify: flex-start, $gap: 0px) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  background: $color-primary;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 10px;
+  .container {
+    @include flexConatiner(center, space-between);
+    height: 80px;
+    .logo {
+      overflow-x: visible;
+      img {
+        height: 40px;
+        display: block;
+      }
+    }
+  }
+}
+
+.navlinks {
+  @include flexConatiner(center, flex-end);
+  font-size: $font-size-primary;
+  gap: 20px;
+  .link {
+    color: $color-primary;
+  }
+  .btn {
+    background: $color-primary;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+  }
+}
+
+.home {
+  background: $BG-color-primary;
+  .container {
+    padding-top: 10px;
+    height: 90vh;
+    @include flexConatiner(center, space-between);
+    gap: 20px;
+    .hero_col1,
+    .hero_col2 {
+      flex-basis: 50%;
+    }
+
+    .hero_col1 {
+      .btn {
+        @extend .btn;
+        width: 40%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 15px;
+        cursor: pointer;
+      }
+
+      h1 {
+        font-family: $font-stack2;
+        text-transform: capitalize;
+        font-size: 9.5rem;
+        font-weight: 400;
+      }
+      p {
+        font-size: 2.5rem;
+        width: 90%;
+        line-height: 1;
+        overflow: hidden;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

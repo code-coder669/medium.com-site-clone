@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.btn, .home .container .hero_col1 .btn {
+  background: #242424;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 10px;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  width: 90%;
+  margin: auto;
+  height: 80px;
+}
+.navbar .container .logo {
+  overflow-x: visible;
+}
+.navbar .container .logo img {
+  height: 40px;
+  display: block;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0px;
+  width: 90%;
+  margin: auto;
+  font-size: 1.4rem;
+  gap: 20px;
+}
+.navlinks .link {
+  color: #242424;
+}
+.navlinks .btn, .navlinks .home .container .hero_col1 .btn, .home .container .hero_col1 .navlinks .btn {
+  background: #242424;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+
+.home {
+  background: #FFC017;
+}
+.home .container {
+  padding-top: 10px;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  width: 90%;
+  margin: auto;
+  gap: 20px;
+}
+.home .container .hero_col1,
+.home .container .hero_col2 {
+  flex-basis: 50%;
+}
+.home .container .hero_col1 .btn {
+  width: 40%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 15px;
+  cursor: pointer;
+}
+.home .container .hero_col1 h1 {
+  font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  font-size: 9.5rem;
+  font-weight: 400;
+}
+.home .container .hero_col1 p {
+  font-size: 2.5rem;
+  width: 90%;
+  line-height: 1;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background: #FFC017;
+  border-bottom: 1px solid black;
+}/*# sourceMappingURL=App.css.map */
